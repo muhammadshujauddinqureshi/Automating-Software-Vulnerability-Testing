@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        .navbar {
+            color: darkgrey;
+            font-size:30px;
+
+        }
+
+    </style>
+</head>
+<body style="background-color:white; color: grey">
+    <div class="navbar navbar-light navbar-fixed-top" style="background-color: white;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <div class="container">
+                    <div></div>
+                    <span class="label label-default" style="background-color:white;color:gray;font-size:13px;">National University Of Singapore | SA48 </span>
+                    <span class="label label-default" style="background-color:royalblue;font-size:13px;">Indrajit Maurya</span>
+                    <span class="label label-default" style="background-color:teal;font-size:13px;">Guan Yangyue</span>
+                    <span class="label label-default" style="background-color:chocolate;font-size:13px;">Swati Subramanian</span>
+                    <span class="label label-default" style="background-color:indianred;font-size:13px;">Wang Hengyu</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer style="text-align:center">
+            <p>&copy; @DateTime.Now.Year -Shopping Cart Application | National University of Singapore | SA48 | Team 4A</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
